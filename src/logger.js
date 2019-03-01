@@ -1,3 +1,5 @@
+const envLevel = parseInt(process.env.LOGGER_LEVEL);
+
 export default class Logger {
 	static NONE = 0;
 	static LOG = 1;
@@ -6,11 +8,10 @@ export default class Logger {
 	static ERROR = 4;
 	static DEBUG = 5;
 
-	static level = typeof process.env.LOGGER_LEVEL === 'number' ?
-		process.env.LOGGER_LEVEL : Logger.ERROR;
+	static level = typeof envLevel === 'number' ? envLevel : Logger.ERROR;
 
 	static setLevel(level) {
-		if (typeof process.env.LOGGER_LEVEL !== 'number') {
+		if (typeof envLevel !== 'number') {
 			if (typeof level === 'number') {
 				Logger.level = level;
 			}
