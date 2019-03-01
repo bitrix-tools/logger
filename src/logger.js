@@ -1,4 +1,4 @@
-const envLevel = parseInt(process.env.LOGGER_LEVEL);
+const envLevel = typeof process.env.LOGGER_LEVEL === 'string' ? parseInt(process.env.LOGGER_LEVEL) : null;
 
 export default class Logger {
 	static NONE = 0;
