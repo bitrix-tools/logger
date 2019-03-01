@@ -1,6 +1,6 @@
 {
   "name": "@bitrix/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/logger.cjs.js",
   "module": "dist/logger.esm.js",
