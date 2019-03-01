@@ -1,0 +1,39 @@
+{
+  "name": "@bitrix/logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/logger.cjs.js",
+  "module": "dist/logger.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitrix-tools/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "bitrix"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.2.3",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Bitrix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitrix-tools/logger/issues"
+  },
+  "homepage": "https://github.com/bitrix-tools/logger#readme"
+}
