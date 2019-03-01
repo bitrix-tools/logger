@@ -1,4 +1,5 @@
 export default class Logger {
+	static NONE = 0;
 	static LOG = 1;
 	static INFO = 2;
 	static WARN = 3;
