@@ -3,7 +3,6 @@
   "version": "1.0.4",
   "description": "",
   "main": "dist/logger.cjs.js",
-  "module": "dist/logger.esm.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
